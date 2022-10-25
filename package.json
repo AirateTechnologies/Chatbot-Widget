@@ -1,0 +1,22 @@
+{
+  "name": "airate-chatbot-widget",
+  "version": "0.0.4",
+  "description": "![ScreenShot](static/img/banner.png)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AirateTechnologies/Chatbot-Widget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AirateTechnologies/Chatbot-Widget/issues"
+  },
+  "homepage": "https://github.com/AirateTechnologies/Chatbot-Widget#readme"
+}
