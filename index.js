@@ -149,6 +149,7 @@ window.addEventListener('load', () => {
   $("#profile_div").click(() => {
     $(".profile_div").toggle();
     $(".widget").toggle();
+    send("init");
   });
 
   // clear function to clear the chat contents of the widget.
