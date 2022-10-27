@@ -9,7 +9,7 @@ function include(file) {
     document.getElementsByTagName('head').item(0).appendChild(script);
 }
 
-include('./static/js/lib/jquery.min.js');
-include('./static/js/lib/materialize.min.js');
-include('./static/js/lib/chart.min.js');
-include('./static/js/lib/uuid.min.js');
+include(base_static_url + '/static/js/lib/jquery.min.js');
+include(base_static_url + '/static/js/lib/materialize.min.js');
+include(base_static_url + '/static/js/lib/chart.min.js');
+include(base_static_url + '/static/js/lib/uuid.min.js');

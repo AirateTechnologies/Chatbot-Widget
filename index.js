@@ -1,3 +1,12 @@
+const load_local = false
+
+base_static_url = 'https://airatetechnologies.github.io/Chatbot-Widget'
+
+if (load_local) {
+    base_static_url = '.'
+}
+
+
 
 /* module for importing other js files */
 function include(file) {
@@ -13,12 +22,12 @@ function include(file) {
 function include_libs() {
 /* import components */
   include('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
-  include('./static/js/lib/materialize.min.js');
-  include('./static/js/lib/uuid.min.js');
-  include('./static/js/lib/chart.min.js');
-  include('./static/js/lib/showdown.min.js');
+  include(base_static_url + '/static/js/lib/materialize.min.js');
+  include(base_static_url + '/static/js/lib/uuid.min.js');
+  include(base_static_url + '/static/js/lib/chart.min.js');
+  include(base_static_url + '/static/js/lib/showdown.min.js');
   // Should be loaded last as it depends on previous imports
-  include('./static/js/components/index.js');
+  include(base_static_url + '/static/js/components/index.js');
 }
 
 
@@ -108,7 +117,7 @@ function injectCSS() {
   var link = document.createElement("link");
   link.type = "text/css";
   link.rel = "stylesheet";
-  link.href = "./static/css/style.css";
+  link.href = base_static_url + "/static/css/style.css";
   var head = document.head;
   head.appendChild(link);
 }
@@ -121,7 +130,7 @@ function injectHTML() {
 
   body.appendChild(div);
 
-  fetch('./static/widget.html')
+  fetch(base_static_url + '/static/widget.html')
   .then(response => response.text())
   .then(text => div.insertAdjacentHTML('afterend', text));
 }

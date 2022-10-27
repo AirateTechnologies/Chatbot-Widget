@@ -9,14 +9,14 @@ function include(file) {
 
 /* include all the components js file */
 
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/chat.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/constants.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/cardsCarousel.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/botTyping.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/charts.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/collapsible.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/dropDown.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/location.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/pdfAttachment.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/quickReplies.js');
-include('https://airatetechnologies.github.io/Chatbot-Widget/static/js/components/suggestionButtons.js');
+include(base_static_url + '/static/js/components/chat.js');
+include(base_static_url + '/static/js/constants.js');
+include(base_static_url + '/static/js/components/cardsCarousel.js');
+include(base_static_url + '/static/js/components/botTyping.js');
+include(base_static_url + '/static/js/components/charts.js');
+include(base_static_url + '/static/js/components/collapsible.js');
+include(base_static_url + '/static/js/components/dropDown.js');
+include(base_static_url + '/static/js/components/location.js');
+include(base_static_url + '/static/js/components/pdfAttachment.js');
+include(base_static_url + '/static/js/components/quickReplies.js');
+include(base_static_url + '/static/js/components/suggestionButtons.js');
