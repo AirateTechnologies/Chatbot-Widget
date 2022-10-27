@@ -108,7 +108,7 @@ function injectCSS() {
   // Materialize
   var link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = base_static_url + "static/css/materialize.min.css";
+  link.href = base_static_url + "/static/css/materialize.min.css";
   var head = document.head;
   head.appendChild(link);
 
