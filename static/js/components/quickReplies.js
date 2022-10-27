@@ -39,6 +39,9 @@ function showQuickReplies(quickRepliesData) {
         const walk = (x - startX) * 3; // scroll-fast
         slider.scrollLeft = scrollLeft - walk;
     });
+
+    // Disable input field
+    $("#userInput").prop("disabled", true);
 }
 
 // on click of quickreplies, get the payload value and send it to rasa
@@ -51,4 +54,6 @@ $(document).on("click", ".quickReplies .chip", function () {
 
     // delete the quickreplies
     $(".quickReplies").remove();
+    // Enable input field
+    $("#userInput").prop("disabled", false);
 });
