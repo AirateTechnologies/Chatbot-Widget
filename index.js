@@ -12,12 +12,13 @@ function include(file) {
 
 function include_libs() {
 /* import components */
-  include('./static/js/components/index.js');
   include('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
   include('./static/js/lib/materialize.min.js');
   include('./static/js/lib/uuid.min.js');
   include('./static/js/lib/chart.min.js');
   include('./static/js/lib/showdown.min.js');
+  // Should be loaded last as it depends on previous imports
+  include('./static/js/components/index.js');
 }
 
 
