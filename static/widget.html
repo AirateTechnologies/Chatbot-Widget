@@ -1,13 +1,10 @@
 <body>
    
-    <div class="container" style="@include 'https://airatetechnologies.github.io/Chatbot-Widget/static/css/materialize.min.css';">
+    <div class="container" style="@include url('https://airatetechnologies.github.io/Chatbot-Widget/static/css/materialize.min.css');">
         
-        <style scoped>
-        <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://airatetechnologies.github.io/Chatbot-Widget/static/css/materialize.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://airatetechnologies.github.io/Chatbot-Widget/static/css/style.css" />
+    <style scoped>
+        @include url("https://airatetechnologies.github.io/Chatbot-Widget/static/css/materialize.min.css");
+        @include url("https://airatetechnologies.github.io/Chatbot-Widget/static/css/style.css");
     </style>
       <!-- Modal for rendering the charts, declare this if you want to render charts, 
          else you remove the modal -->
