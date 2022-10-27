@@ -1,4 +1,13 @@
-.chatMee .widget {
+/* TODO Check usufulness */
+/* body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../img/body.png") no-repeat center center fixed;
+  background-size: cover;
+} */
+
+/* ============= css related to chats =============== */
+
+.widget {
   display: none;
   width: 350px;
   right: 15px;
@@ -9,7 +18,8 @@
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 5px 0 #00000096;
 }
-.chatMee .chat_header {
+
+.chat_header {
   height: 60px;
   /* TODO: change color header color */
   background: #000000c7;
@@ -17,13 +27,15 @@
   padding: 5px;
   font-size: 20px;
 }
-.chatMee .chat_header_title {
+
+.chat_header_title {
   color: white;
   float: left;
   margin-top: 3%;
   margin-left: 35%;
 }
-.chatMee .chats {
+
+.chats {
   /* display: none; */
   height: 385px;
   padding: 2px;
@@ -32,18 +44,21 @@
   margin-top: 1px;
   transition: 0.2s;
 }
-.chatMee div.chats::-webkit-scrollbar {
+
+div.chats::-webkit-scrollbar {
   overflow-y: hidden;
   width: 0px;
   /* remove scrollbar space /
     background: transparent;
     / optional: just make scrollbar invisible */
 }
-.chatMee .clearfix {
+
+.clearfix {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-.chatMee .botAvatar {
+
+.botAvatar {
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
@@ -51,7 +66,8 @@
   margin-left: 5px;
   /* border: 2px solid  #060DCF ; */
 }
-.chatMee .botMsg {
+
+.botMsg {
   float: left;
   margin-top: 5px;
   background: #e3e7ee;
@@ -66,36 +82,41 @@
   word-wrap: break-word;
   border-radius: 5px 20px 20px 20px;
 }
-.chatMee div.chats > pre {
+
+div.chats > pre {
   font-family: monospace, monospace;
   font-size: 1em;
   margin: 0 !important;
   /* display: inline !important; */
   white-space: initial !important;
 }
-.chatMee div.chats > ul:not(.browser-default) {
+div.chats > ul:not(.browser-default) {
   padding-left: 1em;
 }
-.chatMee div.chats > ul:not(.browser-default) > li {
+div.chats > ul:not(.browser-default) > li {
   list-style-type: initial;
 }
-.chatMee div.chats > span.botMsg > ol {
+
+div.chats > span.botMsg > ol {
   padding-left: 1em;
 }
-.chatMee textarea {
+textarea {
   box-shadow: none;
   resize: none;
   outline: none;
   overflow: hidden;
   font-family: Lato;
 }
-.chatMee textarea::-webkit-input-placeholder {
+
+textarea::-webkit-input-placeholder {
   font-family: Lato;
 }
-.chatMee textarea-webkit-scrollbar {
+
+textarea-webkit-scrollbar {
   width: 0 !important;
 }
-.chatMee .userMsg {
+
+.userMsg {
   animation: animateElement linear 0.2s;
   animation-iteration-count: 1;
   margin-top: 5px;
@@ -113,7 +134,8 @@
   border-radius: 20px 5px 20px 20px;
   /* box-shadow: 0px 2px 5px 0px #9a828454; */
 }
-.chatMee blockquote {
+
+blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
   border-left: 5px solid #ee6e73;
@@ -122,7 +144,8 @@
   margin-inline-start: 0 !important;
   margin-inline-end: 0 !important;
 }
-.chatMee .userAvatar {
+
+.userAvatar {
   animation: animateElement linear 0.3s;
   animation-iteration-count: 1;
   border-radius: 50%;
@@ -132,7 +155,8 @@
   margin-right: 5px;
   /* border: 2px solid  #060DCF ; */
 }
-.chatMee .usrInput {
+
+.usrInput {
   padding: 0.5em;
   width: 80%;
   margin-left: 4%;
@@ -140,7 +164,8 @@
   padding-left: 15px;
   height: 40px;
 }
-.chatMee .keypad {
+
+.keypad {
   /* display: none;  */
   background: white;
   height: 50px;
@@ -151,7 +176,8 @@
   border-radius: 0px 0px 10px 10px;
   border-top: 1px solid #e3e7ee;
 }
-.chatMee #sendButton {
+
+#sendButton {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -164,12 +190,14 @@
   cursor: pointer;
   color: #060dcfc7;
 }
-.chatMee .imgProfile {
+
+.imgProfile {
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
   border-radius: 50px;
   width: 60%;
 }
-.chatMee .profile_div {
+
+.profile_div {
   /* display: none; */
   position: fixed;
   padding: 5px;
@@ -178,22 +206,28 @@
   right: 0;
   cursor: pointer;
 }
-.chatMee #close,
-.chatMee #restart,
-.chatMee #clear {
+
+/* css for dropdown menu of the bot */
+
+#close,
+#restart,
+#clear {
   cursor: pointer;
 }
-.chatMee .dropdown-trigger {
+
+.dropdown-trigger {
   cursor: pointer;
   color: white;
   margin-right: 5px;
   float: right;
   margin-top: 3%;
 }
-.chatMee .dropdown-content li > a,
-.chatMee .dropdown-content li > span {
+
+.dropdown-content li > a,
+.dropdown-content li > span {
   color: #060dcfc7;
 }
+
 @keyframes animateElement {
   0% {
     opacity: 0;
@@ -204,7 +238,12 @@
     transform: translate(0px, 0px);
   }
 }
-.chatMee .content {
+
+/*========== css related to chats elements============= */
+
+/* css for card details of carousel cards */
+
+.content {
   transition: 0.2s;
   display: none;
   width: 350px;
@@ -216,13 +255,15 @@
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 2px 10px 1px #b5b5b5;
 }
-.chatMee .content_header {
+
+.content_header {
   object-fit: cover;
   width: 100%;
   height: 40%;
   border-radius: 10px 10px 0px 0px;
 }
-.chatMee .content_data {
+
+.content_data {
   overflow-y: scroll;
   height: 70%;
   position: absolute;
@@ -235,7 +276,8 @@
   padding: 5px;
   box-shadow: 0px -1px 20px 3px #9c9393ba;
 }
-.chatMee .content_title {
+
+.content_title {
   color: black;
   font-weight: 600;
   word-wrap: break-word;
@@ -244,74 +286,88 @@
   width: 80%;
   border-radius: 0.28571429rem;
 }
-.chatMee .votes {
+
+.votes {
   font-size: 12px;
   color: lightslategray;
 }
-.chatMee .ratings {
+
+.ratings {
   margin-top: 5px;
   background: #9acd32;
   padding: 5px;
   color: white;
   border-radius: 5px;
 }
-.chatMee .user_ratings {
+
+.user_ratings {
   border-radius: 0.28571429rem;
   color: #fff;
   font-weight: 600;
   font-size: 15px;
 }
-.chatMee .total_ratings {
+
+.total_ratings {
   font-size: 12px;
   opacity: 0.5;
   margin-left: 5px;
 }
-.chatMee .content_data > .row .col {
+
+.content_data > .row .col {
   padding: 5px;
 }
-.chatMee .metadata_1,
-.chatMee .metadata_2,
-.chatMee .metadata_3,
-.chatMee .metadata_4,
-.chatMee .row {
+
+.metadata_1,
+.metadata_2,
+.metadata_3,
+.metadata_4,
+.row {
   margin-bottom: 0px;
 }
-.chatMee .metadata_1 {
+
+.metadata_1 {
   color: lightslategrey;
   padding: 5px;
 }
-.chatMee .order,
-.chatMee #closeContents {
+
+.order,
+#closeContents {
   color: #060dcfc7;
 }
-.chatMee .metadata_2,
-.chatMee .metadata_3,
-.chatMee .metadata_4,
-.chatMee .metadata_5,
-.chatMee .metadata_6 {
+
+.metadata_2,
+.metadata_3,
+.metadata_4,
+.metadata_5,
+.metadata_6 {
   color: lightslategrey;
   padding: 5px;
 }
-.chatMee .average_cost,
-.chatMee .timings,
-.chatMee .location,
-.chatMee .cuisines {
+
+.average_cost,
+.timings,
+.location,
+.cuisines {
   width: 70%;
   float: right;
   margin-right: 25%;
 }
-.chatMee .fa .fa-user-o {
+
+.fa .fa-user-o {
   font-size: 15px;
 }
-.chatMee .stars-outer {
+
+.stars-outer {
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
 }
-.chatMee .stars-outer::before {
+
+.stars-outer::before {
   content: "\f006 \f006 \f006 \f006 \f006";
 }
-.chatMee .stars-inner {
+
+.stars-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -319,52 +375,70 @@
   overflow: hidden;
   width: 0;
 }
-.chatMee .stars-inner::before {
+
+.stars-inner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b;
 }
-.chatMee div.content::-webkit-scrollbar {
+
+div.content::-webkit-scrollbar {
   width: 0 !important;
 }
-.chatMee div.content_data::-webkit-scrollbar {
+
+div.content_data::-webkit-scrollbar {
   overflow-y: hidden;
   width: 0px;
   /* remove scrollbar space /
     background: transparent;
     / optional: just make scrollbar invisible */
 }
-.chatMee .singleCard {
+
+/* css for single card */
+
+.singleCard {
   padding-left: 10%;
   padding-right: 10px;
 }
-.chatMee .imgcard {
+
+/* css for image card */
+
+.imgcard {
   object-fit: cover;
   width: 80%;
   height: 50%;
   border-radius: 10px;
   margin-left: 1%;
 }
-.chatMee .imgcard_mrkdwn {
+
+/* css for markdown images */
+
+.imgcard_mrkdwn {
   width: 80%;
   border-radius: 10px;
   margin-left: 1%;
 }
-.chatMee .suggestions {
+
+/* css for suggestions buttons */
+
+.suggestions {
   padding: 5px;
   width: 80%;
   border-radius: 10px;
   background: #ffffff;
   box-shadow: 2px 5px 5px 1px #dbdade;
 }
-.chatMee .menuTitle {
+
+.menuTitle {
   padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.chatMee .menu {
+
+.menu {
   padding: 5px;
 }
-.chatMee .menuChips {
+
+.menuChips {
   display: block;
   background: #060dcfc7;
   color: #fff;
@@ -376,12 +450,16 @@
   font-size: 14px;
   word-wrap: break-word;
 }
-.chatMee .cards {
+
+/* cards carousels */
+
+.cards {
   display: none;
   position: relative;
   max-width: 300px;
 }
-.chatMee .cards_scroller {
+
+.cards_scroller {
   overflow-x: scroll;
   overflow-y: hidden;
   display: flex;
@@ -392,10 +470,13 @@
   /* Enable Safari touch scrolling physics which is needed for scroll snap */
   -webkit-overflow-scrolling: touch;
 }
-.chatMee .cards_scroller img {
+
+.cards_scroller img {
   border-radius: 10px;
 }
-.chatMee .cards div.note {
+
+.cards div.note {
+  position: absolute;
   /* vertically align center */
   top: 50%;
   transform: translateY(-50%);
@@ -407,7 +488,8 @@
   font-size: 4em;
   color: white;
 }
-.chatMee .cards .arrow {
+
+.cards .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -418,33 +500,39 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
-.chatMee .cards .arrow.next {
+
+.cards .arrow.next {
   display: none;
   font-size: 2em;
   color: #ffffff;
   right: 10px;
 }
-.chatMee .cards .arrow.prev {
+
+.cards .arrow.prev {
   display: none;
   font-size: 2em;
   color: #ffffff;
   left: 10px;
 }
-.chatMee .cards_scroller::-webkit-scrollbar {
+
+.cards_scroller::-webkit-scrollbar {
   width: 0 !important;
 }
-.chatMee .cards_scroller > div.carousel_cards {
+
+.cards_scroller > div.carousel_cards {
   margin: 5px;
   scroll-snap-align: center;
   position: relative;
   scroll-behavior: smooth;
 }
-.chatMee .cards_scroller div.carousel_cards {
+
+.cards_scroller div.carousel_cards {
   min-width: 50%;
   min-height: 70%;
   background: #b5b5b5;
   border-radius: 10px;
 }
+
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -461,7 +549,8 @@
     transform: translatex(0);
   }
 }
-.chatMee .in-left {
+
+.in-left {
   -webkit-animation-name: fadeInLeft;
   -moz-animation-name: fadeInLeft;
   -o-animation-name: fadeInLeft;
@@ -472,20 +561,25 @@
   animation-fill-mode: both;
   -webkit-animation-duration: 0.8s;
   -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
   animation-duration: 0.8s;
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   -o-animation-duration: 0.8s;
   animation-delay: 0.8s;
 }
-.chatMee .cardBackgroundImage {
+
+/* css for cards within the cards carousels */
+
+.cardBackgroundImage {
   width: 100%;
   border-radius: 5px;
   height: 100%;
   position: absolute;
   object-fit: scale-down;
 }
-.chatMee .cardFooter {
+
+.cardFooter {
   background: rgba(56, 53, 60, 0.86);
   border-radius: 0px 0px 5px 5px;
   position: absolute;
@@ -497,7 +591,8 @@
   word-wrap: break-word;
   padding: 1px;
 }
-.chatMee .cardTitle {
+
+.cardTitle {
   overflow: hidden;
   white-space: unset;
   text-overflow: clip;
@@ -512,13 +607,17 @@
   color: #ffffff;
   cursor: pointer;
 }
-.chatMee .cardDescription {
+
+.cardDescription {
   padding: 5px;
   font-size: 13px;
   color: white;
   line-height: 15px;
 }
-.chatMee .dropDownMsg {
+
+/*css for dropDown messages*/
+
+.dropDownMsg {
   float: left;
   margin-top: 5px;
   background: white;
@@ -532,10 +631,14 @@
   font-size: 13px;
   word-wrap: break-word;
 }
-.chatMee .dropDownMsg > select {
+
+.dropDownMsg > select {
   border: 0px solid #f2f2f2;
 }
-.chatMee .quickReplies {
+
+/* css for quick replies */
+
+.quickReplies {
   padding: 5px;
   position: relative;
   width: 100%;
@@ -549,38 +652,48 @@
   cursor: pointer;
   scroll-behavior: smooth;
 }
-.chatMee .quickReplies::-webkit-scrollbar {
+
+.quickReplies::-webkit-scrollbar {
   width: 0 !important;
 }
-.chatMee .quickReplies.active {
+
+.quickReplies.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
   transform: scale(1);
 }
-.chatMee .chip {
+
+.chip {
   background-color: white;
-  border: 1px solid #060dcfc7;
+  border: 1px solid#060dcfc7;
   color: #060dcfc7;
   font-weight: bolder;
   text-align: center;
 }
-.chatMee .chip:hover {
+
+.chip:hover {
   background-color: #060dcfc7;
   color: white;
 }
-.chatMee #expand:hover {
+
+/* css for charts */
+
+#expand:hover {
   font-size: 18px;
 }
-.chatMee #expand {
+
+#expand {
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.chatMee .modal {
+
+.modal {
   height: 60%;
   border-radius: 10px;
 }
-.chatMee .chart-container {
+
+.chart-container {
   position: relative;
   margin: auto;
   height: 25vh;
@@ -591,7 +704,10 @@
   box-shadow: 2px 3px 9px 0px #9a82847a;
   margin-top: 5px;
 }
-.chatMee .collapsible {
+
+/* css for collapsible */
+
+.collapsible {
   margin-top: 5px;
   margin-left: 5%;
   max-width: 60%;
@@ -601,27 +717,36 @@
   border-radius: 20px;
   background: white;
 }
-.chatMee .collapsible-body {
+
+.collapsible-body {
   padding: 15px;
 }
-.chatMee .collapsible-header {
+
+.collapsible-header {
   font-weight: bold;
   color: #060dcfc7;
 }
-.chatMee ul.collapsible > li:first-child .collapsible-header {
+
+ul.collapsible > li:first-child .collapsible-header {
   border-radius: 20px 20px 0px 0px;
 }
-.chatMee ul.collapsible > li:last-child .collapsible-header {
+
+ul.collapsible > li:last-child .collapsible-header {
   color: #060dcfc7;
   border-radius: 0px 0px 20px 20px;
 }
-.chatMee ul.collapsible > li:last-child .collapsible-body {
+
+ul.collapsible > li:last-child .collapsible-body {
   border-bottom: none;
 }
-.chatMee .collapsible-header {
+
+.collapsible-header {
   padding: 10px;
 }
-.chatMee .botTyping {
+
+/* css for botTyping */
+
+.botTyping {
   float: left;
   margin-top: 5px;
   background: #e3e7ee;
@@ -629,12 +754,14 @@
   /* box-shadow: 2px 3px 9px 0px #9a82847a; */
   margin-left: 0.5em;
   padding: 15px;
+  border-radius: 5px 20px 20px 20px;
   max-width: 60%;
   min-width: 20%;
   word-wrap: break-word;
   border-radius: 5px 20px 20px 20px;
 }
-.chatMee .botTyping > div {
+
+.botTyping > div {
   width: 10px;
   height: 10px;
   background-color: #060dcfc7;
@@ -644,14 +771,17 @@
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
   margin-right: 5px;
 }
-.chatMee .botTyping .bounce1 {
+
+.botTyping .bounce1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
-.chatMee .botTyping .bounce2 {
+
+.botTyping .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+
 @-webkit-keyframes sk-bouncedelay {
   0%,
   80%,
@@ -662,6 +792,7 @@
     -webkit-transform: scale(1);
   }
 }
+
 @keyframes sk-bouncedelay {
   0%,
   80%,
@@ -674,15 +805,18 @@
     transform: scale(1);
   }
 }
-.chatMee input:focus {
+
+input:focus {
   outline: none;
 }
-.chatMee video:focus {
+
+video:focus {
   outline: none;
 }
-.chatMee .video-container iframe,
-.chatMee .video-container object,
-.chatMee .video-container embed {
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -692,11 +826,15 @@
   border-radius: 10px;
   border-style: none;
 }
-.chatMee .tap-target {
+
+/* Bot pop-up intro */
+
+.tap-target {
   color: #fff;
   background: #060dcfc7;
 }
-.chatMee .pdf_attachment {
+
+.pdf_attachment {
   border: 0.5px solid #00000014;
   width: 60%;
   height: 14%;
@@ -704,7 +842,8 @@
   margin-left: 10%;
   box-shadow: 2px 3px 9px 0px #9a82842e;
 }
-.chatMee .pdf_icon {
+
+.pdf_icon {
   border-radius: 10px 0px 0px 10px;
   height: 100%;
   font-size: 25px;
@@ -712,12 +851,14 @@
   background-color: #060dcfc7;
   color: white;
 }
-.chatMee .pdf_link {
+
+.pdf_link {
   padding: 5% !important;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.chatMee .pdf_link a {
+
+.pdf_link a {
   color: #060dcfc7;
 }
