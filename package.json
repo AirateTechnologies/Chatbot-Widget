@@ -1,6 +1,6 @@
 {
   "name": "airate-chatbot-widget",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "![ScreenShot](static/img/banner.png)",
   "main": "index.js",
   "directories": {
