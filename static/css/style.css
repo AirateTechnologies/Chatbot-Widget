@@ -188,7 +188,7 @@ blockquote {
   padding: 5px;
   font-size: 20px;
   cursor: pointer;
-  color: #060dcfc7;
+  /* color: #060dcfc7; */
 }
 
 .imgProfile {
